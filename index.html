@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aether X1 Pro — Flagship Smartphone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#top" class="brand">
+        <span class="brand-dot"></span>
+        <span>AETHER <strong>X1 PRO</strong></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#specs">Specifications</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#buy" class="nav-cta">Buy Now</a>
+      </nav>
+
+      <button type="button" id="cartToggleBtn" class="cart-btn" aria-label="Open shopping bag">
+        Bag <span id="cartCount" class="cart-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">NEW LAUNCH • TITANIUM GRADE 5</span>
+          <h1 class="hero-title">Power beyond limits.<br /><span>Crafted in titanium.</span></h1>
+          <p class="hero-subtitle">
+            Meet the Aether X1 Pro — featuring the 3nm HyperCore X9 chip, a 200MP Triple-Optic Pro
+            Camera, and a 120Hz ProMotion LTPO AMOLED display built for all-day performance.
+          </p>
+
+          <div class="hero-stats">
+            <div>
+              <strong>200MP</strong>
+              <span>Pro Optics</span>
+            </div>
+            <div>
+              <strong>5,500 mAh</strong>
+              <span>100W FlashCharge</span>
+            </div>
+            <div>
+              <strong>120Hz</strong>
+              <span>LTPO AMOLED</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#buy" class="btn btn-primary">Configure &amp; Buy — From ₹79,999</a>
+            <a href="#specs" class="btn btn-outline">View Full Specs</a>
+          </div>
+          <p class="hero-emi">No-Cost EMI starts at ₹6,667/month • Free express delivery across India</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="product-stage">
+            <img
+              id="heroProductImg"
+              src="assets/phone-obsidian.svg"
+              alt="Aether X1 Pro in Obsidian Black"
+            />
+          </div>
+
+          <!-- Interactive Colour Preview -->
+          <div class="color-bar">
+            <span class="color-label">Finish: <strong id="heroColorName">Obsidian Black</strong></span>
+            <div class="swatches" id="heroSwatches" role="radiogroup" aria-label="Select finish">
+              <button type="button" class="swatch active" data-color="obsidian" title="Obsidian Black" aria-label="Obsidian Black"></button>
+              <button type="button" class="swatch" data-color="titanium" title="Titanium Silver" aria-label="Titanium Silver"></button>
+              <button type="button" class="swatch" data-color="alpine" title="Alpine Blue" aria-label="Alpine Blue"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights / Features Section -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">ENGINEERED FOR EXCELLENCE</span>
+          <h2 class="section-title">Flagship features in every detail</h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">&#9889;</div>
+            <h3>3nm HyperCore X9 Chip</h3>
+            <p>Up to 35% faster CPU and hardware-accelerated ray tracing for console-grade mobile gaming without thermal throttling.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">&#128247;</div>
+            <h3>200MP Triple-Optic System</h3>
+            <p>Large 1-inch primary sensor paired with a 5x periscope telephoto lens and 8K Dolby Vision video capture.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">&#128267;</div>
+            <h3>5,500 mAh Silicon-Carbon Battery</h3>
+            <p>Two-day endurance with 100W wired FlashCharge (0 to 100% in 24 minutes) and 50W magnetic wireless charging.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">&#128167;</div>
+            <h3>IP68 + Aerospace Titanium</h3>
+            <p>Micro-blasted Grade 5 titanium frame with Ceramic Shield Glass 2 for superior drop and water resistance.</p>
+          </article>
+        </div>
+
+        <!-- Camera Spotlight Banner -->
+        <div class="spotlight-banner">
+          <div class="spotlight-copy">
+            <span class="section-eyebrow">PRO CAMERA ARCHITECTURE</span>
+            <h3>Studio-grade portraits. Day or night.</h3>
+            <p>
+              Our custom NightSight Neural Engine merges 12 RAW frames in milliseconds, preserving crisp
+              textures, natural skin tones, and zero-shutter-lag action shots.
+            </p>
+            <ul class="check-list">
+              <li>200MP Wide (f/1.6, OIS) + 50MP Ultra-Wide (122&deg;)</li>
+              <li>50MP 5x Optical Periscope Telephoto (up to 100x Digital Zoom)</li>
+              <li>ProRAW, Log Video &amp; Dual-View Director Mode</li>
+            </ul>
+          </div>
+          <div class="spotlight-media">
+            <img src="assets/camera-system.svg" alt="Aether X1 Pro Triple Camera System" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section with Interactive Category Tabs -->
+    <section class="section section-alt" id="specs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">TECHNICAL SPECIFICATIONS</span>
+          <h2 class="section-title">Built to outperform</h2>
+        </div>
+
+        <div class="spec-tabs" id="specTabs" role="tablist">
+          <button type="button" class="tab-btn active" data-tab="performance" role="tab">Performance &amp; Display</button>
+          <button type="button" class="tab-btn" data-tab="camera" role="tab">Camera &amp; Video</button>
+          <button type="button" class="tab-btn" data-tab="battery" role="tab">Battery &amp; Connectivity</button>
+          <button type="button" class="tab-btn" data-tab="design" role="tab">Design &amp; In the Box</button>
+        </div>
+
+        <div class="specs-panel" id="specsPanel"></div>
+      </div>
+    </section>
+
+    <!-- Pricing Comparison Section -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">TRANSPARENT PRICING</span>
+          <h2 class="section-title">Choose the storage that fits your workflow</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <span class="tier-name">Standard</span>
+            <h3>256 GB / 12 GB RAM</h3>
+            <div class="price-tag">₹79,999</div>
+            <p class="price-sub">or ₹6,667/mo for 12 months</p>
+            <ul class="price-features">
+              <li>UFS 4.0 High-Speed Storage</li>
+              <li>100W GaN Charger in the box</li>
+              <li>1-Year Standard Warranty</li>
+            </ul>
+            <button type="button" class="btn btn-outline select-plan-btn" data-storage="256">
+              Select 256 GB
+            </button>
+          </article>
+
+          <article class="price-card popular">
+            <span class="popular-badge">Most Popular</span>
+            <span class="tier-name">Pro Creator</span>
+            <h3>512 GB / 16 GB RAM</h3>
+            <div class="price-tag">₹89,999</div>
+            <p class="price-sub">or ₹7,500/mo for 12 months</p>
+            <ul class="price-features">
+              <li>Ideal for 8K &amp; ProRAW shooters</li>
+              <li>100W GaN Charger + MagCase included</li>
+              <li>₹5,000 Instant Bank Discount</li>
+            </ul>
+            <button type="button" class="btn btn-primary select-plan-btn" data-storage="512">
+              Select 512 GB
+            </button>
+          </article>
+
+          <article class="price-card">
+            <span class="tier-name">Ultra Studio</span>
+            <h3>1 TB / 16 GB RAM</h3>
+            <div class="price-tag">₹1,04,999</div>
+            <p class="price-sub">or ₹8,750/mo for 12 months</p>
+            <ul class="price-features">
+              <li>Maximum space for Log video &amp; games</li>
+              <li>100W GaN Charger + MagCase included</li>
+              <li>Free 1-Year Accidental Screen Protection</li>
+            </ul>
+            <button type="button" class="btn btn-outline select-plan-btn" data-storage="1024">
+              Select 1 TB
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purchase / Configurator Section -->
+    <section class="section section-alt" id="buy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">ORDER DIRECT</span>
+          <h2 class="section-title">Configure your Aether X1 Pro</h2>
+        </div>
+
+        <div class="buy-grid">
+          <div class="buy-preview">
+            <img id="buyProductImg" src="assets/phone-obsidian.svg" alt="Configured Aether X1 Pro" />
+            <div class="delivery-pill">
+              &#10003; In Stock — Ships within 24 hours from Bengaluru &amp; Mumbai hubs
+            </div>
+          </div>
+
+          <div class="configurator">
+            <!-- Step 1: Finish -->
+            <div class="config-group">
+              <label class="config-label">1. Choose Finish: <strong id="buyColorName">Obsidian Black</strong></label>
+              <div class="swatches" id="buySwatches">
+                <button type="button" class="swatch active" data-color="obsidian" aria-label="Obsidian Black"></button>
+                <button type="button" class="swatch" data-color="titanium" aria-label="Titanium Silver"></button>
+                <button type="button" class="swatch" data-color="alpine" aria-label="Alpine Blue"></button>
+              </div>
+            </div>
+
+            <!-- Step 2: Storage -->
+            <div class="config-group">
+              <label class="config-label">2. Choose Storage &amp; Memory</label>
+              <div class="option-grid" id="storageOptions">
+                <button type="button" class="option-card active" data-storage="256">
+                  <strong>256 GB</strong>
+                  <span>12 GB RAM • ₹79,999</span>
+                </button>
+                <button type="button" class="option-card" data-storage="512">
+                  <strong>512 GB</strong>
+                  <span>16 GB RAM • ₹89,999</span>
+                </button>
+                <button type="button" class="option-card" data-storage="1024">
+                  <strong>1 TB</strong>
+                  <span>16 GB RAM • ₹1,04,999</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Protection -->
+            <div class="config-group">
+              <label class="config-label">3. Add AetherCare+ Protection</label>
+              <div class="option-grid two-col" id="careOptions">
+                <button type="button" class="option-card active" data-care="none">
+                  <strong>No Extra Care</strong>
+                  <span>1-Year Standard Warranty</span>
+                </button>
+                <button type="button" class="option-card" data-care="plus">
+                  <strong>AetherCare+ (2 Yrs)</strong>
+                  <span>Accidental Damage • +₹6,999</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Quantity & Promo -->
+            <div class="summary-box">
+              <div class="summary-row">
+                <span>Selected Model</span>
+                <strong id="summaryModel">Aether X1 Pro (256 GB, Obsidian Black)</strong>
+              </div>
+              <div class="summary-row">
+                <span>Protection</span>
+                <strong id="summaryCare">Standard Warranty (Included)</strong>
+              </div>
+              <div class="summary-row total-row">
+                <span>Total Price (incl. GST)</span>
+                <strong id="summaryTotal">₹79,999</strong>
+              </div>
+
+              <div class="buy-actions">
+                <button type="button" id="addToBagBtn" class="btn btn-primary">Add to Bag</button>
+                <button type="button" id="buyNowBtn" class="btn btn-secondary">Express Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">VERIFIED BUYERS</span>
+          <h2 class="section-title">Customer Reviews</h2>
+        </div>
+
+        <div class="reviews-layout">
+          <div>
+            <div class="rating-summary">
+              <div class="big-score">4.9</div>
+              <div>
+                <div class="stars-display">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p id="reviewCountText">Based on 4 verified reviews</p>
+              </div>
+            </div>
+
+            <div id="reviewsList" class="reviews-list"></div>
+          </div>
+
+          <form id="reviewForm" class="review-form">
+            <h3>Share Your Experience</h3>
+            <label for="revName">Your Name</label>
+            <input type="text" id="revName" placeholder="e.g., Priya Nair" required />
+
+            <label for="revCity">City</label>
+            <input type="text" id="revCity" placeholder="e.g., Hyderabad" required />
+
+            <label>Your Rating</label>
+            <div class="star-picker" id="reviewStarPicker">
+              <button type="button" data-star="1" class="active">&#9733;</button>
+              <button type="button" data-star="2" class="active">&#9733;</button>
+              <button type="button" data-star="3" class="active">&#9733;</button>
+              <button type="button" data-star="4" class="active">&#9733;</button>
+              <button type="button" data-star="5" class="active">&#9733;</button>
+            </div>
+
+            <label for="revComment">Review</label>
+            <textarea id="revComment" rows="4" placeholder="How is the camera, battery, and performance?" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Slide-out Shopping Bag Drawer -->
+  <div id="cartModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="modal-backdrop" id="cartBackdrop"></div>
+    <div class="drawer">
+      <div class="drawer-header">
+        <h3 id="cartTitle">Your Shopping Bag</h3>
+        <button type="button" id="closeCartBtn" class="close-btn" aria-label="Close">&times;</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="drawer-footer">
+        <div class="summary-row total-row">
+          <span>Grand Total</span>
+          <strong id="cartGrandTotal">₹0</strong>
+        </div>
+        <button type="button" id="checkoutBtn" class="btn btn-primary full-width">
+          Place Order
+        </button>
+        <p id="checkoutMessage" class="checkout-msg hidden"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Aether Technologies India. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
